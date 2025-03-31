@@ -1,0 +1,132 @@
+/*
+kleuren palette
+lichtblauw: #2EC8F0
+bruin: #B07D4d
+oranje: #F08A2D
+Desaturated blauw: #518C9B
+Desaturated bruin: #705E4D
+Dark cyan: #3C4446
+*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+}
+
+header{
+    /* text */
+    font-family: Lexend;
+
+    /* background */
+    background-color: white;
+}
+
+main{
+    margin: 8px;
+}
+
+footer{
+    /* text */
+    font-family: Lexend;
+    color: #121212FF;
+
+    text-align:center;
+    width:100%;
+
+    /* dimensions */
+    min-height: 80px;
+
+    /* background */
+    background-color: white;
+}
+
+.site {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
+
+    /* background */
+    background-color: #fff8f0;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+
+    font-family: Lexend;
+}
+
+a.button{
+    text-align: center;
+    line-height: 40px;
+
+
+    transition: .35s;
+
+    font-family: Lexend;
+    color: #000000;
+    text-decoration: none;
+
+    /* margin: 4px 2px; */
+    min-height: 40px;
+
+    border-top: 0px;
+    border-color: #000000;
+}
+
+.button:hover{
+    background-color: #00000055;
+}
+
+.button:active{
+    background-color: #000000FF;
+}
+
+div{
+    /* text */
+    color: black;
+    font-family: Lexend;
+}
+
+
+.site-header {
+    position: sticky;
+    top: 0px;
+  }
+
+.banner{
+    text-align:center;
+    width:100%;
+}
+
+.hr-thick-bottom{
+    border: 2px solid #121212FF;
+    margin: 0px;
+
+    border-radius: 0px 0px 16px 16px; 
+}
+
+.hr-thick-center{
+    border: 2px solid #121212FF;
+    margin: 0px;
+
+    border-radius: 0px;; 
+}
+
+.hr-thick-top{
+    border: 2px solid #121212FF;
+    margin: 0px;
+
+    border-radius: 16px 16px 0px 0px; 
+}
+
+:target{
+    scroll-margin-top: 140px;
+}
