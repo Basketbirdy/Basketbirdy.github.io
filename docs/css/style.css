@@ -153,6 +153,18 @@ div{
     width: 75%;
 }
 
+.flex.info-list-row{
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    align-items: center;
+    justify-content: space-between;
+
+    flex-grow: 1;
+    width: 100%;
+}
+
 .flex.project-thumbnail{
     display: flex;
     flex-flow: row nowrap;
@@ -161,12 +173,88 @@ div{
     border-radius: 25%;
 
     padding: 1% 5%;
-    max-width: 25%;
+    max-width: 35%;
+}
+
+.flex.gamejam-thumbnail{
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    align-items: center;
+
+    border-radius: 32px;
+
+    padding: 5% 5%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 p.project{
     margin: 4px 0px;
     text-align: left;
+}
+
+p.gamejam{
+    flex-grow: 1;
+    width: 50%;
+
+    margin: 1%;
+    text-align: left;
+}
+
+.flex.gamejam-list{
+    padding: 5% 10%;
+}
+
+.flex.gamejam-container{
+    transition: .35s;
+
+    padding: 2% 3%;
+    border: 0px;
+    border-radius: 32px;
+    background-color: white;
+
+    flex-wrap: nowrap;
+    flex-grow: 1;
+
+    width: 100%;
+}
+
+.flex.gamejam-grid-container{
+    padding: 0%;
+
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    width: 100%;
+}
+
+.flex.gamejam-cell-container{
+    transition: .35s;
+
+    margin: 1% 0%;
+    padding: 3% 3% 1% 3%;
+
+    border: 0px;
+    border-radius: 24px;
+    background-color: white;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+
+    max-width: 32%;
+    width: 30%;
+}
+
+.flex.gamejam-cell-container:hover{
+    background-color: #00000022;
+}
+
+.flex.gamejam-cell-container:active{
+    background-color: #000000AA;
 }
 
 .site-header {
