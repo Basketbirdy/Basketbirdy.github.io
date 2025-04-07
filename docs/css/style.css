@@ -81,6 +81,11 @@ a.button{
     border-color: #000000;
 }
 
+a.no-decor{
+    color: #000000;
+    text-decoration: none;
+}
+
 .button:hover{
     background-color: #00000025;
 }
@@ -124,6 +129,22 @@ div{
 .flex.project-container{
     transition: .35s;
 
+    padding: 3% 3% 0% 3%;
+    margin: 1% 0%;
+    border: 0px;
+    border-radius: 32px;
+    background-color: white;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+
+    width: 100%;
+}
+
+.flex.project-cell-container{
+    transition: .35s;
+
     padding: 3% 3%;
     margin: 1% 0%;
     border: 0px;
@@ -136,11 +157,11 @@ div{
     width: 100%;
 }
 
-.flex.project-container:hover{
+.flex.project-cell-container:hover{
     background-color: #00000022;
 }
 
-.flex.project-container:active{
+.flex.project-cell-container:active{
     background-color: #000000AA;
 }
 
@@ -189,6 +210,11 @@ div{
     overflow: hidden;
 }
 
+p.subtitle{
+    color: #383838;
+    text-align: center;
+}
+
 p.project{
     margin: 4px 0px;
     text-align: left;
@@ -214,6 +240,7 @@ p.gamejam{
     border-radius: 32px;
     background-color: white;
 
+    flex-direction: column;
     flex-wrap: nowrap;
     flex-grow: 1;
 
@@ -279,8 +306,8 @@ p.gamejam{
 .flex.contact-cell-container{
     transition: .35s;
 
-    margin: 2% 2% 0% 2%;
-    padding: 3% 3% 3% 3%;
+    margin: 2% 0% 0% 1%;
+    padding: 2% 2% 2% 2%;
 
     border: 0px;
     border-radius: 24px;
@@ -293,7 +320,9 @@ p.gamejam{
 
     align-content: start;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+
+    width: 10%;
 }
 
 .flex.contact-cell-container:hover{
