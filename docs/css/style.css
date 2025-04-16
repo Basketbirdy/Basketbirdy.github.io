@@ -63,6 +63,19 @@ footer{
     font-family: Lexend;
 }
 
+.grid{
+    display: grid;
+    font-family: Lexend;
+    
+
+    padding: 5%;
+    width: 90%;
+}
+
+.grid.two{
+    grid-template-columns: auto auto;
+}
+
 a.button{
     text-align: center;
     line-height: 40px;
@@ -123,7 +136,10 @@ div{
 }
 
 .flex.project-list{
-    padding: 0% 20%;
+    padding-top: 0%;
+    padding-bottom: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .flex.project-container{
@@ -140,21 +156,28 @@ div{
     flex-grow: 1;
 
     width: 100%;
+
+    box-sizing: border-box;
 }
 
 .flex.project-cell-container{
     transition: .35s;
 
-    padding: 3% 3%;
-    margin: 1% 0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
     border: 0px;
-    border-radius: 32px;
+    border-radius: 8px;
     background-color: white;
 
     flex-wrap: nowrap;
     flex-grow: 1;
 
     width: 100%;
+
+    box-sizing: border-box;
+
+    box-shadow: 5px 5px 5px rgb(133, 133, 133);
 }
 
 .flex.project-cell-container:hover{
@@ -163,10 +186,12 @@ div{
 
 .flex.project-cell-container:active{
     background-color: #000000AA;
+    box-shadow: 0px 0px 0px #FFFFFFFF;
 }
 
 .flex.info-list{
-    padding: 1% 5%;
+    padding: 3% 3%;
+    margin: 1% 0%;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: start;
@@ -191,9 +216,8 @@ div{
     flex-flow: row nowrap;
     align-items: center;
 
-    border-radius: 25%;
+    border-radius: 8px;
 
-    padding: 1% 5%;
     max-width: 35%;
 }
 
@@ -203,10 +227,12 @@ div{
     flex-grow: 1;
     align-items: center;
 
-    border-radius: 32px;
+    border-radius: 8px;
 
-    padding: 5% 5%;
+    /* padding: 5% 5%; */
     max-width: 100%;
+    height: auto;
+
     overflow: hidden;
 }
 
@@ -222,17 +248,22 @@ p.project{
 
 p.gamejam{
     flex-grow: 1;
-    width: 50%;
+    min-width: 50%;
+    max-width: 100%;
+    width: auto;
 
     margin: 1%;
     text-align: left;
+    text-wrap: nowrap;
 }
 
 .flex.gamejam-list{
-    padding: 5% 10%;
+    padding: 0% 20% 5% 20%;
+    box-sizing: border-box;
 }
 
 .flex.gamejam-container{
+
     transition: .35s;
 
     padding: 2% 3%;
@@ -245,35 +276,45 @@ p.gamejam{
     flex-grow: 1;
 
     width: 100%;
+    box-sizing: border-box;
 }
 
 .flex.gamejam-grid-container{
-    padding: 0%;
+    display: grid;
 
-    justify-content: space-evenly;
+    gap: 2% 2%;
+
+    grid-template-columns: auto auto auto;
+
+    padding: 2%;
+
+    /* justify-content: space-evenly; */
 
     flex-wrap: wrap;
     flex-grow: 1;
 
-    width: 100%;
+    width: auto;
+    box-sizing: border-box;
 }
 
 .flex.gamejam-cell-container{
     transition: .35s;
 
-    margin: 1% 0%;
-    padding: 3% 3% 1% 3%;
+    padding: 0%;
 
     border: 0px;
-    border-radius: 24px;
+    border-radius: 8px;
     background-color: white;
 
     flex-direction: column;
     flex-wrap: nowrap;
     flex-grow: 1;
 
-    max-width: 32%;
-    width: 30%;
+    width: auto;
+
+    box-sizing: border-box;
+
+    box-shadow: 5px 5px 5px rgb(133, 133, 133);
 }
 
 .flex.gamejam-cell-container:hover{
@@ -282,6 +323,8 @@ p.gamejam{
 
 .flex.gamejam-cell-container:active{
     background-color: #000000AA;
+    box-shadow: 0px 0px 0px #FFFFFFFF
+    
 }
 
 .flex.contact-list{
@@ -323,6 +366,8 @@ p.gamejam{
     justify-content: center;
 
     width: 10%;
+
+    box-shadow: 5px 5px 5px rgb(133, 133, 133);
 }
 
 .flex.contact-cell-container:hover{
@@ -331,6 +376,7 @@ p.gamejam{
 
 .flex.contact-cell-container:active{
     background-color: #000000AA;
+    box-shadow: 0px 0px 0px #FFFFFFFF
 }
 
 p.contact{
@@ -364,21 +410,21 @@ img.pfp{
     border: 2px solid #121212FF;
     margin: 0px;
 
-    border-radius: 0px 0px 16px 16px; 
+    border-radius: 0px 0px 16px 16px;
 }
 
 .hr-thick-center{
     border: 4px solid #121212FF;
     margin: 0px;
 
-    border-radius: 0px;; 
+    border-radius: 0px;;
 }
 
 .hr-thick-top{
     border: 2px solid #121212FF;
     margin: 0px;
 
-    border-radius: 16px 16px 0px 0px; 
+    border-radius: 16px 16px 0px 0px;
 }
 
 :target{
