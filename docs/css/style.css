@@ -19,20 +19,24 @@ body{
 header{
     /* text */
     font-family: Lexend;
-    color: white;
+    color: #ebf2fa;
 
     /* background */
-    background-color: #0D1F2DFF;
+    /* background-color: #0D1F2DFF; */
+    background-color: #2d8113ff;
+    box-shadow: 0px 5px 0px 0px #00000025;
 }
 
 main{
     margin: 8px;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 footer{
     /* text */
     font-family: Lexend;
-    color: white;
+    color: #ebf2fa;
 
     text-align:center;
     width:100%;
@@ -43,9 +47,8 @@ footer{
     /* min-height: 80px; */
 
     /* background */
-    /* background-color: white; */
+    /* background-color: #ebf2fa; */
     background-color: #0b2135;
-
 }
 
 .site {
@@ -55,7 +58,8 @@ footer{
     grid-template-columns: minmax(0, 1fr);
 
     /* background */
-    background-color: rgb(40, 53, 63);
+    background-color: #1f590dff;
+
 }
 
 .flex{
@@ -81,6 +85,10 @@ footer{
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid.two--row{
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
 .grid.three{
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -88,6 +96,9 @@ footer{
 .grid.info{
     padding: 5%;
     width: 90%;
+
+    overflow: visible;
+    
 }
 
 a.button{
@@ -110,7 +121,7 @@ a.no-decor{
 }
 
 a.color--light{
-    color: white;
+    color: #ebf2fa;
 }
 
 a.color--dark{
@@ -118,11 +129,11 @@ a.color--dark{
 }
 
 .button:hover{
-    background-color: #ffffff25;
+    background-color: #00000025;
 }
 
 .button:active{
-    background-color: #ffffffaa;
+    background-color: #000000aa;
 }
 
 div{
@@ -152,11 +163,27 @@ div{
     width: 15%;
 }
 
+.flex.about-me-list{
+    background-color: #1c3144ff;
+    margin: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    box-shadow: -12px 0px  0px 0px #00000025, 12px 0px  0px 0px #00000025;
+}
+
 .flex.project-list{
+    background-color: #1c3144ff;
     padding-top: 0%;
     padding-bottom: 10%;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    box-shadow: -12px 0px  0px 0px #00000025, 12px 0px  0px 0px #00000025;
 }
 
 .flex.project-container{
@@ -166,7 +193,7 @@ div{
     margin: 1% 0%;
     border: 0px;
     border-radius: 32px 32px 8px 8px;
-    background-color: white;
+    background-color: #ebf2fa;
 
     flex-direction: column;
     flex-wrap: nowrap;
@@ -185,7 +212,7 @@ div{
 
     border: 0px;
     border-radius: 8px;
-    background-color: #fffffc;
+    background-color: #ebf2fa;
 
     flex-wrap: nowrap;
     flex-grow: 1;
@@ -194,7 +221,7 @@ div{
 
     box-sizing: border-box;
 
-    box-shadow: 5px 5px 5px rgb(43, 43, 43);
+    box-shadow: 5px 5px 0px #00000025;
 }
 
 .flex.project-cell-container:hover{
@@ -203,11 +230,11 @@ div{
 
 .flex.project-cell-container:active{
     background-color: #ffffff25;
-    box-shadow: 0px 0px 0px rgb(43, 43, 43);
+    box-shadow: 0px 0px 0px #00000025;
 }
 
 .flex.info-list{
-    padding: 3% 3%;
+    padding: 2% 3%;
     margin: 1% 0%;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -236,6 +263,7 @@ div{
     border-radius: 0px;
 
     max-width: 35%;
+    min-width: 35%;
 }
 
 .flex.gamejam-thumbnail{
@@ -247,13 +275,24 @@ div{
     border-radius: 0px;
 
     /* padding: 5% 5%; */
+    min-width: 100%;
     max-width: 100%;
     height: auto;
 
     overflow: hidden;
 }
 
+.details--thumbnail{
+    width: 100%;
+    text-align: center;
+}
+
+.pixelated{
+    image-rendering: pixelated;
+}
+
 h1.project{
+    margin-top: 0em;
     margin-bottom: .33em;
 }
 
@@ -264,7 +303,7 @@ h2.project{
 }
 
 p{
-    color: white;
+    color: #ebf2fa;
 }
 
 p.p--dark{
@@ -292,6 +331,8 @@ p.gamejam{
     margin: 1%;
     text-align: left;
     text-wrap: nowrap;
+    font-size: small;
+    overflow: hidden;
 }
 
 .p--footer{
@@ -299,8 +340,16 @@ p.gamejam{
 }
 
 .flex.gamejam-list{
-    padding: 0% 20% 10% 20%;
+    background-color: #1c3144ff;
+    padding-top: 0%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
     box-sizing: border-box;
+
+    box-shadow: -12px 0px  0px 0px #00000025, 12px 0px  0px 0px #00000025;
 }
 
 .flex.gamejam-container{
@@ -310,7 +359,7 @@ p.gamejam{
     padding: 2% 3%;
     border: 0px;
     border-radius: 32px 32px 8px 8px;
-    background-color: #fffffc;
+    background-color: #ebf2fa;
 
     flex-direction: column;
     flex-wrap: nowrap;
@@ -336,6 +385,8 @@ p.gamejam{
 
     width: auto;
     box-sizing: border-box;
+
+    align-items: start;
 }
 
 .flex.gamejam-cell-container{
@@ -345,7 +396,7 @@ p.gamejam{
 
     border: 0px;
     border-radius: 8px;
-    background-color: #FFFFFC;
+    background-color: #ebf2fa;
 
     flex-direction: column;
     flex-wrap: nowrap;
@@ -355,7 +406,7 @@ p.gamejam{
 
     box-sizing: border-box;
 
-    box-shadow: 5px 5px 5px rgb(43, 43, 43);
+    box-shadow: 5px 5px 5px #00000025;
 }
 
 .flex.gamejam-cell-container:hover{
@@ -364,12 +415,20 @@ p.gamejam{
 
 .flex.gamejam-cell-container:active{
     background-color: #ffffff25;
-    box-shadow: 0px 0px 0px rgb(43, 43, 43);
+    box-shadow: 0px 0px 0px #00000025;
     
 }
 
 .flex.contact-list{
-    padding: 0% 20% 10% 20%;
+    background-color: #1c3144ff;
+    padding-top: 0%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    box-shadow: -12px 0px  0px 0px #00000025, 12px 0px  0px 0px #00000025;
 }
 
 .flex.contact-container{
@@ -378,7 +437,7 @@ p.gamejam{
     padding: 2% 3%;
     border: 0px;
     border-radius: 32px 32px 8px 8px;
-    background-color: #fffffc;
+    background-color: #ebf2fa;
 
     flex-direction: column;
     flex-wrap: nowrap;
@@ -394,14 +453,14 @@ p.gamejam{
 
     border: 0px;
     border-radius: 8px;
-    background-color: #fffffc;
+    background-color: #ebf2fa;
 
     flex-direction: row;
     flex-wrap: nowrap;
 
     justify-content: center;
 
-    box-shadow: 5px 5px 5px rgb(43, 43, 43);
+    box-shadow: 5px 5px 0px #00000025;
 }
 
 .flex.contact-cell-container:hover{
@@ -410,7 +469,7 @@ p.gamejam{
 
 .flex.contact-cell-container:active{
     background-color: #ffffff25;
-    box-shadow: 0px 0px 0px #FFFFFF00
+    box-shadow: 0px 0px 0px #00000025
 }
 
 p.contact{
@@ -446,7 +505,7 @@ img.pfp{
 }
 
 .hr-thick-center{
-    border: 4px solid #fffffc;
+    border: 4px solid #ebf2fa;
     margin: 0px;
     
     border-radius: 0px;;
