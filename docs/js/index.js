@@ -1,3 +1,3 @@
-function Redirect(string){
-    document.location.href = "pages/project-colorswapper.html"
+function Redirect(url){
+    document.location.href = url;
 }

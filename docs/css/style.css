@@ -59,17 +59,41 @@ footer{
 
     /* background */
     background-color: #1f590dff;
+}
 
+.area{
+    margin-left: 15%;
+    margin-right: 15%;
+
+    background-color: #1c3144ff;
+    box-shadow: -12px 0px  0px 0px #00000025, 12px 0px  0px 0px #00000025;
+}
+
+div{
+    /* text */
+    font-family: Lexend;
+    font-size: auto;
 }
 
 .flex{
     display: flex;
-    align-items: center;
+    flex-wrap: wrap; 
+    /* align-items: center;
     justify-content: space-evenly;
-    align-content: center;
-    flex-wrap: wrap;
+    align-content: center; */
+}
 
-    font-family: Lexend;
+.centered{
+    align-items: center;
+}
+
+.flex.centered{
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.flex.grow{
+    flex-grow: 1;
 }
 
 .grid{
@@ -101,56 +125,44 @@ footer{
     
 }
 
-a.button--header{
-    text-align: center;
-    line-height: 40px;
-
+.button{
     transition: .35s;
-
-    font-family: Lexend;
-
-    padding-bottom: 3px;
-    min-height: 40px;
-
-    border-top: 0px;
-    border-color: #000000;
-}
-
-a.button{
-    width: 92%;
-
-    padding: 2% 4%;
-    margin-top: 3%;
-    
-    border-style: solid;
-    border-width: 0px;
-    border-radius: 8px;
-    background-color: #2d8113ff;
     
     text-align: center;
-    color: #ebf2fa;
-
-    transition: .35s;
 }
 
-a.no-decor{
-    text-decoration: none;
-}
-
-a.color--light{
-    color: #ebf2fa;
-}
-
-a.color--dark{
-    color: black;
-}
-
-a.button:hover{
+.button:hover{
     background-color: #0d6103ff;
 }
 
-a.button:active{
+.button:active{
     background-color: #000000aa;
+}
+
+.button--filled{
+    width: 100%;
+
+    padding: 2% 4%;
+
+    border-style: solid;
+    border-radius: 8px;
+    background-color: #2d8113ff;
+
+    border: 0px;
+}
+
+.button--header{
+    text-align: center;
+
+    transition: .35s;
+
+    min-height: 40px;
+}
+
+.button--header.redirect{
+    border: 4px solid #00000012;
+    border-radius: 16px;
+    width: 10%;
 }
 
 .button--header:hover{
@@ -161,10 +173,26 @@ a.button:active{
     background-color: #000000aa;
 }
 
-div{
-    /* text */
-    font-family: Lexend;
-    font-size: auto;
+.container--button--info{
+    width: 100%;
+    margin-top: 1%;
+}
+
+.container--button--filled{
+    width: 100%;
+    margin: 2%;
+}
+
+.no-decor{
+    text-decoration: none;
+}
+
+.color--light{
+    color: #ebf2fa;
+}
+
+.color--dark{
+    color: black;
 }
 
 .flex.column-left{
@@ -278,6 +306,7 @@ div{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    object-fit: contain;
 
     border-radius: 0px;
 
